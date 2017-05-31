@@ -1,0 +1,38 @@
+{
+  "name": "insecticide-server",
+  "version": "0.0.1",
+  "description": "Implementation of a server to communicate with the Insecticide debugger",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Insecticide/InsecticideServerJS.git"
+  },
+  "keywords": [
+    "insecticide",
+    "debug",
+    "debugger",
+    "lua",
+    "server"
+  ],
+  "author": [
+    {
+      "name": "Pablo A. Mayobre (Positive07)",
+      "email": "pablo.a.mayobre@gmail.com"
+    },
+    {
+      "name": "Robert Machmer (rm-code)"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Insecticide/InsecticideServerJS/issues"
+  },
+  "homepage": "https://github.com/Insecticide/InsecticideServerJS#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
