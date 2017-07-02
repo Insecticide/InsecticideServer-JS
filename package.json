@@ -2,7 +2,8 @@
   "name": "insecticide-server",
   "version": "0.0.1",
   "description": "Implementation of a server to communicate with the Insecticide debugger",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Insecticide/InsecticideServerJS.git"
@@ -29,10 +30,14 @@
   },
   "homepage": "https://github.com/Insecticide/InsecticideServerJS#readme",
   "devDependencies": {
-    "babel-eslint": "^7.0.0",
-    "standard": "^10.0.2"
+    "@types/node": "^8.0.4",
+    "tslint": "^5.4.3",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "^2.4.1"
   },
-  "standard": {
-    "parser": "babel-eslint"
+  "dependencies": {},
+  "scripts": {
+    "build": "tsc --declaration --declarationDir types --sourceMap --strict --noUnusedLocals --noUnusedParameters",
+    "lint": "tslint -p . --type-check"
   }
 }
